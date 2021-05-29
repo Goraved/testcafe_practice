@@ -1,0 +1,14 @@
+version: '3'
+services:
+  tests:
+    image: testcafe
+    command: npm tests
+    depends_on:
+      - setup
+    volumes:
+      - .:/app
+  setup:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: testcafe

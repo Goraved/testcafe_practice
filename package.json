@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "test": "testcafe chrome 'tests/example.js' -r allure,spec --screenshots path=allure/screenshots,takeOnFails=true",
+    "report": "allure generate allure/allure-results --clean -o allure-report && allure open allure-report"
+  },
+  "dependencies": {
+    "@isaac.frontend/testcafe-reporter-allure": "^2.0.0",
+    "testcafe": "^1.14.2"
+  },
+  "devDependencies": {
+    "testcafe-reporter-allure": "npm:@isaac.frontend/testcafe-reporter-allure@^2.0.0"
+  }
+}
