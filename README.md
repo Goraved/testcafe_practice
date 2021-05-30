@@ -1,4 +1,4 @@
-# praywright_practice
+# TestCafe practice
 Just a [TestCafe](https://testcafe.io) tool practice
 
 ## How to run
